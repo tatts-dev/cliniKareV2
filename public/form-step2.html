@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clini Kare - Symptom Check (Step 2)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg">
+  <div class="form-container">
+    <div class="progress-indicator">
+      <div class="progress-step completed">Step 1: Current Symptoms</div>
+      <div class="progress-step active">Step 2: Past Injuries</div>
+      <div class="progress-step">Step 3: Additional Questions</div>
+    </div>
+    
+    <h2>Past Injuries & Medical History</h2>
+    <p>Select any past injuries or conditions that might be relevant:</p>
+    
+    <form id="injuryForm">
+      <div class="symptom-grid">
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Head Injury">
+          <span class="symptom-text">Head Injury</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Broken Bones">
+          <span class="symptom-text">Broken Bones</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Surgery">
+          <span class="symptom-text">Surgery</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Heart Condition">
+          <span class="symptom-text">Heart Condition</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Diabetes">
+          <span class="symptom-text">Diabetes</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="High Blood Pressure">
+          <span class="symptom-text">High Blood Pressure</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Asthma">
+          <span class="symptom-text">Asthma</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Allergies">
+          <span class="symptom-text">Allergies</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="Chronic Pain">
+          <span class="symptom-text">Chronic Pain</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="injury" value="None">
+          <span class="symptom-text">None</span>
+        </label>
+      </div>
+      
+      <div class="form-navigation">
+        <button type="button" id="backBtn" class="btn-secondary">Previous</button>
+        <button type="submit" class="start-btn">Next Step</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 

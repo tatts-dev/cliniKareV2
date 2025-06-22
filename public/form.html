@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clini Kare - Symptom Check (Step 1)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-bg">
+  <div class="form-container">
+    <div class="progress-indicator">
+      <div class="progress-step active">Step 1: Current Symptoms</div>
+      <div class="progress-step">Step 2: Past Injuries</div>
+      <div class="progress-step">Step 3: Additional Questions</div>
+    </div>
+    
+    <h2>Current Symptoms</h2>
+    <p>Select all symptoms you are currently experiencing:</p>
+    
+    <form id="symptomForm">
+      <div class="symptom-grid">
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Fever">
+          <span class="symptom-text">Fever</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Headache">
+          <span class="symptom-text">Headache</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Nausea">
+          <span class="symptom-text">Nausea</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Cough">
+          <span class="symptom-text">Cough</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Fatigue">
+          <span class="symptom-text">Fatigue</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Stomach Pain">
+          <span class="symptom-text">Stomach Pain</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Dizziness">
+          <span class="symptom-text">Dizziness</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Chest Pain">
+          <span class="symptom-text">Chest Pain</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Shortness of Breath">
+          <span class="symptom-text">Shortness of Breath</span>
+        </label>
+        <label class="symptom-item">
+          <input type="checkbox" name="symptom" value="Joint Pain">
+          <span class="symptom-text">Joint Pain</span>
+        </label>
+      </div>
+      
+      <div class="form-navigation">
+        <a href="dashboard.html" class="btn-secondary">Cancel</a>
+        <button type="submit" class="start-btn">Next Step</button>
+      </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 

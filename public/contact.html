@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clini Kare - Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="CKLOGO1.png" alt="Clini Kare Logo" class="sidebar-logo">
+      <h3>Clini Kare</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        Dashboard
+      </a>
+      <a href="profile.html" class="nav-item">
+        <span class="nav-icon">👤</span>
+        Profile
+      </a>
+      <a href="form.html" class="nav-item">
+        <span class="nav-icon">🏥</span>
+        Symptom Check
+      </a>
+      <a href="cases.html" class="nav-item">
+        <span class="nav-icon">📋</span>
+        Case Tracker
+      </a>
+      <a href="calendar.html" class="nav-item">
+        <span class="nav-icon">📅</span>
+        Calendar
+      </a>
+      <a href="contact.html" class="nav-item active">
+        <span class="nav-icon">📞</span>
+        Contact
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+  
+  <div class="chat-container">
+    <div class="chat-sidebar">
+      <div class="chat-header">
+        <h3>Available Doctors</h3>
+      </div>
+      <div class="doctors-list">
+        <div class="doctor-item active" data-doctor="Dr. Ayesha Green">
+          <div class="doctor-avatar">👩‍⚕️</div>
+          <div class="doctor-info">
+            <div class="doctor-name">Dr. Ayesha Green</div>
+            <div class="doctor-specialty">General Practitioner</div>
+            <div class="doctor-status online">Online</div>
+          </div>
+        </div>
+        <div class="doctor-item" data-doctor="Dr. John Leaf">
+          <div class="doctor-avatar">👨‍⚕️</div>
+          <div class="doctor-info">
+            <div class="doctor-name">Dr. John Leaf</div>
+            <div class="doctor-specialty">Cardiologist</div>
+            <div class="doctor-status online">Online</div>
+          </div>
+        </div>
+        <div class="doctor-item" data-doctor="Dr. Sarah Wilson">
+          <div class="doctor-avatar">👩‍⚕️</div>
+          <div class="doctor-info">
+            <div class="doctor-name">Dr. Sarah Wilson</div>
+            <div class="doctor-specialty">Pediatrician</div>
+            <div class="doctor-status offline">Offline</div>
+          </div>
+        </div>
+        <div class="doctor-item" data-doctor="Dr. Michael Chen">
+          <div class="doctor-avatar">👨‍⚕️</div>
+          <div class="doctor-info">
+            <div class="doctor-name">Dr. Michael Chen</div>
+            <div class="doctor-specialty">Neurologist</div>
+            <div class="doctor-status online">Online</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chat-main">
+      <div class="chat-header">
+        <div class="current-doctor">
+          <div class="doctor-avatar">👩‍⚕️</div>
+          <div>
+            <h3 id="currentDoctorName">Dr. Ayesha Green</h3>
+            <span class="doctor-specialty">General Practitioner</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages">
+        <div class="message doctor-message">
+          <div class="message-content">
+            <p>Hello! I'm Dr. Ayesha Green. How can I help you today?</p>
+            <span class="message-time">10:30 AM</span>
+          </div>
+        </div>
+        <div class="message user-message">
+          <div class="message-content">
+            <p>Hi Doctor, I've been experiencing some symptoms and would like to discuss them.</p>
+            <span class="message-time">10:32 AM</span>
+          </div>
+        </div>
+        <div class="message doctor-message">
+          <div class="message-content">
+            <p>Of course! I'm here to help. Could you please describe your symptoms in detail?</p>
+            <span class="message-time">10:33 AM</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chat-input">
+        <form id="messageForm">
+          <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off">
+          <button type="submit" class="send-btn">📤</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html> 

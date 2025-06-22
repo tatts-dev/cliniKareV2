@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clini Kare - Case Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="CKLOGO1.png" alt="Clini Kare Logo" class="sidebar-logo">
+      <h3>Clini Kare</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        Dashboard
+      </a>
+      <a href="profile.html" class="nav-item">
+        <span class="nav-icon">👤</span>
+        Profile
+      </a>
+      <a href="form.html" class="nav-item">
+        <span class="nav-icon">🏥</span>
+        Symptom Check
+      </a>
+      <a href="cases.html" class="nav-item active">
+        <span class="nav-icon">📋</span>
+        Case Tracker
+      </a>
+      <a href="calendar.html" class="nav-item">
+        <span class="nav-icon">📅</span>
+        Calendar
+      </a>
+      <a href="contact.html" class="nav-item">
+        <span class="nav-icon">📞</span>
+        Contact
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+  
+  <div class="main-content">
+    <div class="content-header">
+      <h1>Case Tracker</h1>
+      <p>View and track your health cases</p>
+    </div>
+    
+    <div class="cases-container-full">
+      <div id="casesList">
+        <p style="text-align:center;color:#666;padding:2rem;">Loading cases...</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html> 
