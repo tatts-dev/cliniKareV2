@@ -77,6 +77,23 @@ if (document.getElementById('welcomeMsg')) {
     const user = users.find(u => u.email === session);
     document.getElementById('welcomeMsg').textContent = user ? `Welcome, ${user.name}!` : 'Welcome!';
     
+    // Load user profile image and email
+    const dashboardUserImage = document.getElementById('dashboardUserImage');
+    const userEmail = document.getElementById('userEmail');
+    
+    if (dashboardUserImage && user) {
+      if (user.image) {
+        dashboardUserImage.src = user.image;
+      } else {
+        // Use a default avatar if no image is set
+        dashboardUserImage.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNDAiIGN5PSI0MCIgcj0iNDAiIGZpbGw9IiM0Q0FGNTAiLz4KPGNpcmNsZSBjeD0iNDAiIGN5PSIzMCIgcj0iMTIiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNiA2NEMxNiA1Mi45NTQzIDI0Ljk1NDMgNDQgMzYgNDRINDRDNTUuMDQ1NyA0NCA2NCA1Mi45NTQzIDY0IDY0VjY4SDE2VjY0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+';
+      }
+    }
+    
+    if (userEmail && user) {
+      userEmail.textContent = user.email;
+    }
+    
     // Load recent cases
     const recentCases = document.getElementById('recentCases');
     if (recentCases) {

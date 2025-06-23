@@ -88,6 +88,42 @@ body, html {
   overflow-y: auto;
 }
 
+/* Dashboard Header with User Profile */
+.dashboard-header {
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.user-profile-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.dashboard-user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4CAF50;
+  box-shadow: 0 4px 15px rgba(76,175,80,0.3);
+}
+
+.user-info h1 {
+  color: #388E3C;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.user-info p {
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+}
+
 .content-header {
   margin-bottom: 2rem;
 }
@@ -843,6 +879,12 @@ input[type="checkbox"] {
   
   .main-content {
     padding: 1rem;
+  }
+  
+  .user-profile-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
   }
   
   .calendar-container {
